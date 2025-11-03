@@ -1,0 +1,7 @@
+{
+  "name": "Copy of DLX Command Center // LUX 2.0 Turbo HUD",
+  "description": "An internal AI development studio and Crypto Lab interface.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
