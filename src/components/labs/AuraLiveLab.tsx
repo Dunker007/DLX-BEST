@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { GoogleGenAI, LiveSession, LiveServerMessage, Modality, Blob } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 import { ChronicleLogType, TranscriptLine } from '../../types';
+
+// Type definitions for Gemini Live API (not exported from @google/genai yet)
+type Blob = { data: string; mimeType: string; };
+type LiveSession = any;
+type LiveServerMessage = any;
+enum Modality { AUDIO = 'AUDIO', TEXT = 'TEXT' }
 
 // Audio Encoding & Decoding functions as per Gemini docs
 function encode(bytes: Uint8Array): string {
